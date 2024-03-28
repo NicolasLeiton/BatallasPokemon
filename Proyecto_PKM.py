@@ -475,6 +475,7 @@ class Juego:
                     if self.jugadores[0].pokemon_restantes() == 0: 
                     #Si no tiene mas pokemons vivos se acaba el juego
                         print(self.jugadores[1].nombre, "ha ganado la batalla!!!")
+                        sleep(4)
                         return
                     else:
                         while self.jugadores[0].cambiar_pkm() == False: #Pide al jugador que cambie su pokemon
@@ -485,6 +486,7 @@ class Juego:
                 if self.jugadores[1].pokemon_restantes() == 0:
                     #Si no tiene mas pokemons vivos se acaba el juego
                     print(self.jugadores[0].nombre, "ha ganado la batalla!!!")
+                    sleep(4)
                     return
                 else:
                     while self.jugadores[1].cambiar_pkm() == False: #Pide al jugador que cambie su pokemon
